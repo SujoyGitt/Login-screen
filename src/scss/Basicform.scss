@@ -1,0 +1,44 @@
+:root {
+  --blue: #65a1fe;
+  --gray: #e4e4e4;
+  --deepgray: rgb(179, 179, 179);
+}
+.loginform {
+  padding: 40px;
+  box-shadow: 0px 15px 45px 15px rgb(221, 221, 221);
+  border-radius: 5px;
+  .email,
+  .password {
+    margin-top: 10px;
+    width: 250px;
+    input {
+      width: 100%;
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+      border-bottom: 2px solid var(--gray);
+    }
+    :focus {
+      outline: none;
+      border-bottom: 2px solid var(--blue);
+    }
+    ::placeholder{
+color:var(--deepgray);
+    }
+    :focus::placeholder{
+      color: black;
+    }
+  }
+  .loginbtn {
+    margin-top: 15px;
+    .btn {
+      margin: 15px 0px;
+      outline: none;
+      background: linear-gradient(to right, skyblue, var(--blue));
+      color: rgb(241, 241, 241);
+    }
+  }
+}
+.storedata{
+  margin-top: 40px;
+}
